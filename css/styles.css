@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+img {
+  width: auto;
+  max-width: 100%
+}
+
+h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h4 {
+  padding-right: 20px;
+}
+
+.info {
+  position: relative;
+  padding-top: 14px;
+
+}
+
+.info h3 {
+  padding-bottom: 10px;
+  padding-left: 130px;
+}
+
+.info img {
+  float: left;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
+
+.span_grey {
+  font-size: 12px;
+  color: #808080;
+}
+
+.info_text {
+  text-align: left;
+  background-color: #fffbc8;
+  padding: 10px 10px 10px 130px;
+  border-radius: 20px 10px 10px 100px;
+
+}
+
+.border_grey {
+  border: 1px solid #cfcfcf;
+}
+
+div.services {
+  margin-left: 130px;
+}
+
+.services_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 15px 0;
+}
+
+.flex_item__service {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+}
+
+span.align_right {
+  display: block;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.span_service {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.span_service.after {
+  border-left: 1px solid #cfcfcf;
+  z-index: 999;
+  position: relative;
+
+}
+
+.span_service.after:after {
+  content: '';
+  height: 25px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.after.after_booking:after {
+  width: 218px;
+  background-color: #b1e19b;
+
+}
+
+.after.after_tours:after {
+  width: 52px;
+  background-color: #ace2f8;
+}
+
+.after.after_hotels:after {
+  width: 36px;
+  background-color: #ace2f8;
+}
+
+.span_bold {
+  font-weight: bold;
+  text-align: center;
+  width: 10%;
+}
+
+.flex_total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+div.comments {
+  padding-top: 20px;
+}
+
+.fas {
+  color: #73b4d5;
+}
+
+.comments_heading_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.comments_heading_flex a {
+  padding-left: 20px;
+}
+
+.comments_icons {
+  margin-left: auto;
+}
+
+.comments_icons span:first-of-type {
+  padding-right: 20px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 70px;
+}
+
+button#add-comment {
+  display: block;
+  width: 285px;
+  margin: 0 auto;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  min-height: 45px;
+  border: none;
+  border-radius: 50px;
+  background-color: #fdd639;
+  cursor: pointer;
+}
+
+section.background_grey {
+  background-color: #f2f2f2;
+}
+
+.comments-add-block {
+
+  padding: 30px 0;
+}
+
+.comments-add-block label {
+  padding-bottom: 20px;
+  display: block;
+}
+
+ul#comments-list {
+  list-style: none;
+  padding: 20px 0;
+}
+
+ul#comments-list li {
+  position: relative;
+  padding: 20px;
+  margin-top: 20px;
+  background: #f2fbff;
+  border: 1px solid #cfcfcf;
+}
+
+ul#comments-list li:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 29px;
+  top: -17px;
+  border: 8px solid;
+  border-color: transparent transparent #cfcfcf #cfcfcf;
+}
+
+ul#comments-list li:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 31px;
+  top: -12px;
+
+  border: 6px solid;
+  border-color: transparent transparent #f2fbff #f2fbff;
+}
+
+.comment-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 460px) {
+  div.services {
+    margin-left: 0;
+  }
+
+  .comments_icons span:first-of-type {
+    padding-right: 0;
+  }
+
+  button#add-comment {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .info_text {
+    padding: 5px 10px 5px 130px;
+  }
+
+  .info img {
+    position: relative;
+    top: 10px;
+  }
+
+  .comments_heading_flex a {
+    padding-left: 10px;
+  }
+}

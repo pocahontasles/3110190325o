@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="info">
+    <img src="images/manager.jpg" alt="manager-photo">
+    <h3>Вероника Ростова<br><span class="span_grey">Менеджер по продажам </span></h3>
+    <div class="info_text border_grey">Подберу для вас самые лучшие предложения.
+      Мои услуги абсолютно бесплатны
+    </div>
+  </div>
+  <div class="services">
+    <span class="span_service align_right">Услуг</span>
+    <div class="services_flex">
+      <div class="flex_item__service">
+        <span class="span_service after after_booking">Ручное бронирование </span>
+        <span class=" span_service  span_bold">11</span>
+      </div>
+      <div class="flex_item__service">
+        <span class=" span_service after after_tours ">Пакетные туры </span>
+        <span class=" span_service  span_bold">3</span>
+      </div>
+      <div class="flex_item__service">
+        <span class=" span_service after after_hotels">Отели </span>
+        <span class=" span_service  span_bold">1</span>
+      </div>
+    </div>
+    <div class="flex_total">
+      <h3 class="span_bold">Всего</h3>
+      <h3 class="span_bold">15</h3>
+
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="comments">
+    <div class="comments_heading_flex">
+      <h3>Последние отзывы</h3>
+      <a href="#">Все отзывы</a>
+      <div class="comments_icons">
+        <span><i class="fas fa-heart"></i>131</span>
+        <span><i class="fas fa-comment-alt"></i>14</span>
+      </div>
+    </div>
+  </div>
+  <ul id="comments-list">
+    <div class="comment-info">
+      <h4>Самуил</h4>
+      <span class="span_grey date">13 октября 2011</span>
+    </div>
+    <li><span>Привет, Верунь! ниче себе ты крутая. фотка класс!!!! </span></li>
+    <div class="comment-info">
+      <h4>Лилия Семёновна</h4>
+      <span class="span_grey date">14 октября 2011</span>
+    </div>
+    <li><span>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами? </span>
+    </li>
+    <div class="comment-info">
+      <h4>Лилия Семёновна </h4>
+      <span class="span_grey date">14 октября 2011</span>
+    </div>
+    <li>
+      <span>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</span>
+    </li>
+  </ul>
+</div>
+<section class="background_grey">
+  <div class="wrapper">
+    <div class="comments-add-block">
+
+      <label><textarea id="input-comment" cols="20" rows="4" wrap="hard"></textarea></label>
+      <button type="submit" id="add-comment">Написать консультанту</button>
+    </div>
+  </div>
+</section>
+<script src="js/main.js" type="application/javascript"></script>
+</body>
+</html>
